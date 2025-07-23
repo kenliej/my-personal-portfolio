@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal portfolio">
+    <title>Kenlie Jugarap - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/pf.png" type="image/png">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-brand">Kenlie Jugarap</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-menu-overlay" id="mobileOverlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="nav-brand">Kenlie Jugarap</span>
+            <button onclick="closeMobileMenu()">
+                ✕
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="#about" onclick="closeMobileMenu()">About</a>
+            <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+        </nav>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="avatar">
+                    <img src="assets/img/pf.png" alt="Kenlie Jugarap" />
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm Kenlie Jugarap</h1>
+                    <p>Just a simple person, who tries everything possible</p>
+                    <div class="location">
+                        <span class="location-icon">📍</span>
+                        <span>Cebu City, Philippines</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <span class="btn-icon">✉️</span>
+                        Contact Me
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/kenliej" class="btn social-btn" target="_blank">
+                        <span>📱</span>
+                    </a>
+                    <a href="mailto:contact@kjugarap.top" class="btn social-btn">
+                        <span>📧</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I'm just curious on how everything works, so i try everything i could learn and help to the
+                        community</p>
+                    <p>When I'm not coding, im just exploring new things and also playing video games and etc.</p>
+                </div>
+                <div class="skills">
+                    <h3>Skills & Technologies</h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">CSS</span>
+                        <span class="skill-badge">HTML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="separator">
+
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-text">
+                <h2>Contact Me</h2>
+                <p>Want to contact me or have any problems, fill the form below and ill contact u as soon as possible.
+                </p>
+            </div>
+
+            <div class="contact-form-container">
+                <div class="contact-card" id="contactCard">
+                    <div class="contact-header">
+                        <h3>📧 Contact Me</h3>
+                    </div>
+                    <form id="contactForm" class="contact-form"
+                        action="https://formsubmit.co/2bc7923d4880733a93f6d058d51ff561" method="POST">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your full name" required>
+                            <div id="nameError" class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            <div id="emailError" class="error-message"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Tell me your problems or any what you want." required></textarea>
+                            <div id="messageError" class="error-message"></div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
+                            <span class="btn-icon">🚀</span>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="contact-social">
+                <a href="https://github.com/kenliej" class="social-link" target="_blank">📱 GitHub</a>
+                <a href="mailto:contact@kjugarap.top" class="social-link">📧 Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kenlie Jugarap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
