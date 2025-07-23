@@ -131,7 +131,6 @@ function setupWindowResize() {
 
 function init() {
     setupSmoothScrolling();
-    handleFormSubmission();
     setupInputValidation();
     setupOutsideClick();
     setupWindowResize();
