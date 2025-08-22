@@ -1,5 +1,5 @@
 .hero {
-    padding: 100px 20px;
+    padding: 30px 20px;
     text-align: center;
     background-color: #fafafa;
 }
@@ -14,15 +14,6 @@
 .avatar {
     width: 120px;
     height: 120px;
-    border-radius: 50%;
-    background-color: #e0e0e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-    font-weight: bold;
-    color: #666;
-    overflow: hidden;
 }
 
 .avatar img {
@@ -59,12 +50,6 @@
 
 .location-icon {
     font-size: 16px;
-}
-
-.hero-actions {
-    display: flex;
-    justify-content: center;
-    width: 100%;
 }
 
 .social-links {
@@ -110,9 +95,16 @@
     font-weight: 500;
 }
 
+.projects-grid {
+    display: grid;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .contact-text {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .contact-text p {
@@ -151,6 +143,10 @@
 @media (min-width: 768px) {
     .hero-text h1 {
         font-size: 3em;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .about-grid {
